@@ -1,7 +1,16 @@
+@font-face {
+  font-family: aquilone;
+  src: url(/resources/aquilone-thin/aquilone-thin.otf);
+}
+
+
+
 .siteContainer {
   width: 100vw;
-  height: 200vh;
+  height: 100vh;
   margin: 0px;
+
+  font-family: aquilone;
 }
 
 .navBar {
@@ -41,6 +50,7 @@
   text-align: center;
   text-decoration: none;
   padding: 10px;
+  font-size: 1.3em;
 }
 
 .sticky {
@@ -62,4 +72,9 @@
   display: flex;
   height: 110px;
   width: 110px;
+}
+
+.footer {
+  height: 20vh;
+  background-color: rgb(83, 78, 75);
 }
