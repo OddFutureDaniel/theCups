@@ -55,6 +55,12 @@ body {
   top: 0;
   width: 100%;
 }
+/*Add some top padding to the page content to prevent sudden quick movement*/
+.sticky + .mainSection {
+    padding-top: 65px;
+}
+
+
 .headerLogo {
   display: flex;
   justify-content: center;
@@ -81,6 +87,8 @@ body {
   -webkit-box-shadow: 0px 10px 7px -3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 10px 7px -3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 10px 7px -3px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  
 }
 
 .navContainer {
@@ -97,21 +105,134 @@ body {
   align-items: center;
   text-decoration: none;
   list-style-type: none;
-  padding: 0;;
+  padding: 0;
 }
 
-.navContainer ul li{
-    text-decoration: none;
-    padding: 15px;
+.navContainer ul li {
+  text-decoration: none;
+  padding: 15px;
 }
 
-.navContainer ul li a{
-    color: rgb(83, 78, 75);
-    text-decoration: none;
+.navContainer ul li button {
+    font-family: aquilone;
+  color: rgb(83, 78, 75);
+  text-decoration: none;
+  font-size: 1.4rem;
+  border: none;
+  background: none;
+}
+
+.navContainer ul li button :hover{
+    color: red;
 }
 
 h2 {
   font-size: 2.3em;
+}
+
+.mainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  height: 60vh;
+}
+
+.sectionContainer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+#target-1 {
+  background: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 70vw;
+  height: 70vh;
+  padding: 5px;
+  margin-top: 20px;
+  display: none;
+}
+
+#target-2 {
+  background: red;
+  width: 70vw;
+  height: 70vh;
+  padding: 5px;
+  margin-top: 20px;
+  display: none;
+}
+
+#target-3 {
+  background: rgb(255, 0, 195);
+  width: 70vw;
+  height: 70vh;
+  padding: 5px;
+  margin-top: 20px;
+  display: none;
+}
+
+#target-4 {
+  background: rgb(26, 255, 0);
+  width: 70vw;
+  height: 70vh;
+  padding: 5px;
+  margin-top: 20px;
+  display: none;
+}
+
+#target-5 {
+  background: rgb(0, 217, 255);
+  width: 70vw;
+  height: 70vh;
+  padding: 5px;
+  margin-top: 20px;
+  display: none;
+}
+
+#target-6 {
+  background: rgb(255, 251, 0);
+  width: 70vw;
+  height: 70vh;
+  padding: 5px;
+  margin-top: 20px;
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.cupbapMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 60vh;
+}
+
+.bibimbapMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 60vh;
 }
 
 .footer {
