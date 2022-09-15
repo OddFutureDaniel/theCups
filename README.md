@@ -16,4 +16,6 @@ Secondly I'd like to show my gratitude to this fine establishment by designing t
 
 ### Technical
 
-Making use of CSS3, HTML5 and Javascript
+Languages: CSS3, HTML5 and Javascript
+
+Additional: JQuery
