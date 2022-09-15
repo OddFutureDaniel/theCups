@@ -11,7 +11,7 @@
   <style>
     body {
       background-size: 98.5px 98.5px;
-      background-image: url(/images/IMG_5593\ 2-modified.jpg);
+      background-image: url(/images/IMG_5593\ 2-modified.png);
       margin: 0px;
       background-attachment: fixed;
     }
@@ -31,11 +31,11 @@
       <nav class="menuNavBar" id="menuNavBar">
         <div class="navContainer">
           <ul>
-            <li><button class="show-1-yes">cupbap</button></li>
-            <li><button class="show-2-yes">bibimbap</button></li>
-            <li><button class="show-3-yes">soup</button></li>
-            <li><button class="show-4-yes">sides</button></li>
-            <li><button class="show-5-yes">sushi & sashimi</button></li>
+            <li><button class="show-1-yes">cupbap</button></li>|
+            <li><button class="show-2-yes">bibimbap</button></li>|
+            <li><button class="show-3-yes">soup</button></li>|
+            <li><button class="show-4-yes">sides</button></li>|
+            <li><button class="show-5-yes">sushi & sashimi</button></li>|
             <li><button class="show-6-yes">basket</button></li>
           </ul>
         </div>
@@ -45,13 +45,92 @@
      
 
           <div id ="container-target">
-            <div id="target-1">
+            <div class="target1" id="target-1">
                 <h2>build your cupbap</h2>
-                <p>Select base</p>
+                <div class="selectHeader">Select base</div>
+                <div class="baseSelectorContainer">
+                    <div class="baseWrapper">
+                        <button class="productimg">
+                            <img src="images/plainnoodles.jpg" alt="">
+                            <div class="productName">
+                                Noodles
+                            </div>
+                        </button>
+                        <button class="productimg">
+                            <img src="images/plainrice.jpg" alt="">
+                            <div class="productName">
+                                Rice
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="selectHeader">Select Topping</div>
+                <div class="baseToppingContainer">
+                  <div class="baseToppingWrapper">
+                      <button class="productimg">
+                          <img src="images/plainnoodles.jpg" alt="">
+                          <div class="productName">
+                              Chicken Teriyaki
+                          </div>
+                      </button>
+                      <button class="productimg">
+                          <img src="images/plainrice.jpg" alt="">
+                          <div class="productName">
+                              Chicken Katsu Curry
+                          </div>
+                      </button>
+                      <button class="productimg">
+                        <img src="images/plainrice.jpg" alt="">
+                        <div class="productName">
+                            Spicy Chicken
+                        </div>
+                    </button>
+                    <button class="productimg">
+                      <img src="images/plainrice.jpg" alt="">
+                      <div class="productName">
+                          Pork Belly
+                      </div>
+                  </button>
+                  <button class="productimg">
+                    <img src="images/plainrice.jpg" alt="">
+                    <div class="productName">
+                        Tofu Curry
+                    </div>
+                </button>
+                <button class="productimg">
+                  <img src="images/plainrice.jpg" alt="">
+                  <div class="productName">
+                      Mixed Veg
+                  </div>
+              </button>
+                  </div>
+              </div>
+                <div class="dropdown">
+                  <button onclick="dropFunc()" class="dropbtn">Additional toppings (+£1)</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Chicken Teriyaki</a>
+                    <a href="#">Chicken Katsu</a>
+                    <a href="#">Spicy Chicken</a>
+                  </div>
+                </div>
+                <div class="basketAdd">
+                  <button class="addToBasket">add to basket</button>
+                </div>
+          
 
             </div>
             <div id="target-2">
-                <!--  show-hide-container-2  -->  
+                <h2>build your cupbap</h2>
+                <p>Select base</p>
+                <div class="baseSelectorContainer">
+                    <div class="baseWrapper">
+                        <button>Noodles</button>
+                        <button>Rice</button>
+                    </div>
+                </div>
+                <p>Select topping</p>
+                <p>Additional toppings (+£1)</p>
+
               </div>
             <div id="target-3">
                 <!--  show-hide-container-3  -->
