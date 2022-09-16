@@ -133,7 +133,7 @@ body {
 }
 
 h2 {
-  font-size: 2.3em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -149,13 +149,16 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   width: 90%;
-  height: 60vh;
+  height: 100%;
 }
 
-.container-target {
+.containerTarget{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 #target-1 {
@@ -197,6 +200,7 @@ h2 {
   align-items: center;
   width: 100%;
   height: auto;
+  flex-wrap: wrap;
 }
 
 .baseToppingContainer {
@@ -227,11 +231,11 @@ h2 {
   font-family: aquilone;
 }
 
-.baseWrapper {
+.baseWrapper  {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 70%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -268,6 +272,12 @@ h2 {
   padding-top: 5px;
 }
 
+.select{
+  border: 1px solid rgb(244, 190, 38);
+  background-color: rgb(244, 190, 38);
+  color: rgb(186, 0, 0);
+}
+
 /* Dropdown Button */
 .dropbtn {
   font-family: aquilone;
@@ -279,16 +289,20 @@ h2 {
   cursor: pointer;
 }
 .dropdown {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .dropdown-content {
   display: none;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  flex-wrap: wrap;
 }
 .dropdown-content a {
   color: black;
@@ -297,7 +311,11 @@ h2 {
   display: block;
 }
 
-.show {display:block;}
+.show {
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
 
 
 .basketAdd {
@@ -387,17 +405,18 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 300px;
+  height: auto;
   background-color: rgb(83, 78, 75);
   color: rgb(255, 255, 255);
+  margin-top: 3px;
 }
 
 .footerWrapper {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  width: 80%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .footerAbout {
@@ -405,6 +424,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: auto;
 }
 
 .footerAbout div {
@@ -413,6 +433,7 @@ h2 {
   align-items: flex-start;
   flex-direction: column;
   font-size: 1.5em;
+  
 }
 
 .footerAbout div a {
@@ -425,6 +446,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: auto;
 }
 
 .footerLogoContainer {
@@ -432,6 +454,8 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 10px;
+  width: 100%;
+  height: 50%;
 }
 
 .footerLogo {

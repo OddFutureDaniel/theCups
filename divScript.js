@@ -81,3 +81,8 @@ function dropFunc() {
       }
     }
   }
+
+  function selected(clicked){
+    document.getElementById(clicked).classList.toggle("select");
+
+  }

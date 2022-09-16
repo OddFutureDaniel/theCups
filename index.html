@@ -44,19 +44,19 @@
         <div class="sectionContainer">
      
 
-          <div id ="container-target">
+          <div class="containerTarget" id ="container-target">
             <div class="target1" id="target-1">
                 <h2>build your cupbap</h2>
                 <div class="selectHeader">Select base</div>
                 <div class="baseSelectorContainer">
                     <div class="baseWrapper">
-                        <button class="productimg">
+                        <button class="productimg" id="noodles" onclick="selected(this.id)">
                             <img src="images/plainnoodles.jpg" alt="">
                             <div class="productName">
                                 Noodles
                             </div>
                         </button>
-                        <button class="productimg">
+                        <button class="productimg" id="rice" onclick="selected(this.id)">
                             <img src="images/plainrice.jpg" alt="">
                             <div class="productName">
                                 Rice
@@ -108,9 +108,14 @@
                 <div class="dropdown">
                   <button onclick="dropFunc()" class="dropbtn">Additional toppings (+£1)</button>
                   <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Chicken Teriyaki</a>
-                    <a href="#">Chicken Katsu</a>
-                    <a href="#">Spicy Chicken</a>
+                    <a href="#">Chicken Teriyaki</a>|
+                    <a href="#">Chicken Katsu</a>|
+                    <a href="#">Spicy Chicken</a>|
+                    <a href="#">Tofu Curry</a>|
+                    <a href="#">Mixed Veg</a>|
+                    <a href="#">Pork Belly</a>
+
+
                   </div>
                 </div>
                 <div class="basketAdd">
@@ -148,46 +153,47 @@
         </div>
         </div>
       </section>
-    </section>
-    <footer class="footer">
-      <div class="footerWrapper">
-        <div class="footerAbout">
-          <h2>About the Cups</h2>
-          <div>
-            <a href=""> > About us</a>
-            <a href=""> > Allergens & Nutrition</a>
-            <a href="">> Contact Us</a>
+      <footer class="footer">
+        <div class="footerWrapper">
+          <div class="footerAbout">
+            <h2>About the Cups</h2>
+            <div>
+              <a href=""> > About us</a>
+              <a href=""> > Allergens & Nutrition</a>
+              <a href="">> Contact Us</a>
+            </div>
           </div>
-        </div>
-        <div class="footerSocials">
-          <h2>Follow Us</h2>
-          <div class="socials">
-            <a href="https://www.facebook.com/thecupsuk/" target="_blank">
-              <img
-                class="fbLogo"
-                src="/images/f_logo_RGB-Blue_58.png"
-                alt="facebook logo"
-              />
-            </a>
-            <a
-              href="https://www.ubereats.com/gb/store/the-cups/BCvj281nTA65yPcaRkqFkA"
-              target="_blank"
-            >
-              <img
-                class="ueLogo"
-                src="/images/431062-removebg-preview (1).png"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="footerLogoContainer">
-            <div class="footerLogo">
-              <img src="images/My project-modified.png" alt="cups logo" />
+          <div class="footerSocials">
+            <h2>Follow Us</h2>
+            <div class="socials">
+              <a href="https://www.facebook.com/thecupsuk/" target="_blank">
+                <img
+                  class="fbLogo"
+                  src="/images/f_logo_RGB-Blue_58.png"
+                  alt="facebook logo"
+                />
+              </a>
+              <a
+                href="https://www.ubereats.com/gb/store/the-cups/BCvj281nTA65yPcaRkqFkA"
+                target="_blank"
+              >
+                <img
+                  class="ueLogo"
+                  src="/images/431062-removebg-preview (1).png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="footerLogoContainer">
+              <div class="footerLogo">
+                <img src="images/My project-modified.png" alt="cups logo" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </section>
+
     <script src="/siteScript.js"></script>
     <script src="/divScript.js"></script>
   </body>
