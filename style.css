@@ -248,17 +248,20 @@ h2 {
   border: 1px solid rgb(202, 198, 196);
   width: 180px;
   font-family: aquilone;
+  border-radius: 5px;
 }
 
-.productimg {
+.productimg, .productimgTopping {
   margin: 10px;
   padding: 0px;
   height: 50px;
+  border-radius:5px;
 }
 
-.productimg img {
+.productimg img, .productimgTopping img {
+  border-radius: 5px 0 0 5px;
   width: 50px;
-  height: 100%;
+  height: 104%;
 }
 
 .productName {
@@ -273,9 +276,9 @@ h2 {
 }
 
 .select{
-  border: 1px solid rgb(244, 190, 38);
-  background-color: rgb(244, 190, 38);
-  color: rgb(186, 0, 0);
+  border: 1px solid rgb(237 221 176) !important; 
+  background-color: rgb(237 221 176) !important;
+  color: rgb(0, 0, 0);
 }
 
 /* Dropdown Button */
@@ -406,9 +409,11 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   height: auto;
+  width: 100%;
   background-color: rgb(83, 78, 75);
   color: rgb(255, 255, 255);
   margin-top: 3px;
+  position: relative;
 }
 
 .footerWrapper {
