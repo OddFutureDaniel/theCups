@@ -70,7 +70,7 @@ function dropFunc() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
+  if (!event.target.matches(".dropbtn") ) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -81,19 +81,27 @@ window.onclick = function (event) {
     }
   }
 };
-
-jQuery($ => {
-    let $productButtons = $('button.productimg').on('click', e => {
-      let $button = $(e.currentTarget);
-      $productButtons.not($button).removeClass('select');
-      $button.toggleClass('select');
-    });
+/* base selector*/
+jQuery(($) => {
+  let $productButtons = $("button.productimg").on("click", (e) => {
+    let $button = $(e.currentTarget);
+    $productButtons.not($button).removeClass("select");
+    $button.toggleClass("select");
   });
-
-  jQuery($ => {
-    let $productButtons = $('button.productimgTopping').on('click', e => {
-      let $button = $(e.currentTarget);
-      $productButtons.not($button).removeClass('select');
-      $button.toggleClass('select');
-    });
+});
+/* topping selector*/
+jQuery(($) => {
+  let $productButtons = $("button.productimgTopping").on("click", (e) => {
+    let $button = $(e.currentTarget);
+    $productButtons.not($button).removeClass("select");
+    $button.toggleClass("select");
   });
+});
+/* additional topping selector*/
+jQuery(($) => {
+  let $productButtons = $("button.additionalProduct").on("click", (e) => {
+    let $button = $(e.currentTarget);
+    $productButtons.not($button).removeClass("select");
+    $button.toggleClass("select");
+  });
+});

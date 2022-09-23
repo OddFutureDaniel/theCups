@@ -142,6 +142,7 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 75vh;
 }
 
 .sectionContainer {
@@ -281,6 +282,10 @@ h2 {
   color: rgb(0, 0, 0);
 }
 
+.selectAdditional{
+
+}
+
 /* Dropdown Button */
 .dropbtn {
   font-family: aquilone;
@@ -307,11 +312,13 @@ h2 {
   z-index: 1;
   flex-wrap: wrap;
 }
-.dropdown-content a {
+.additionalProduct {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  border: none;
+  border-radius: 5px;
 }
 
 .show {
@@ -413,7 +420,8 @@ h2 {
   background-color: rgb(83, 78, 75);
   color: rgb(255, 255, 255);
   margin-top: 3px;
-  position: relative;
+  position: absolute;
+  bottom: -1;
 }
 
 .footerWrapper {
